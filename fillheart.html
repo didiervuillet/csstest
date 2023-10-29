@@ -1,0 +1,76 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <meta charset="UTF-8" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap"
+      rel="stylesheet"
+/>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="logo" href="Assets/images/icones/ohmyfood@2x.svg" />
+
+    <link rel="stylesheet" href="Sass/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/76ea79564c.js"
+      crossorigin="anonymous"
+    ></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            font-size: 2em;
+        }
+        @keyframes visible {
+         0% {
+         transform: scale(0);
+         }
+         80% {
+         transform: scale(1);
+            }
+}
+        .custom-checkbox input[type="checkbox"],
+            .custom-checkbox .checked {
+            animation: visible 1s;
+            display: none;
+            color:red;
+          
+
+transform-origin: bottom;
+
+background: -webkit-linear-gradient(135deg, #9356DC, #FF79DA);
+-webkit-background-clip: text;
+background-clip: text;
+-webkit-text-fill-color: transparent;
+        }
+ 
+        .custom-checkbox input[type="checkbox"]:checked ~ .checked
+        {
+            display: inline-block;
+        }
+ 
+        .custom-checkbox input[type="checkbox"]:checked ~ .unchecked
+        {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<label class="custom-checkbox">
+    <input type="checkbox" />
+    <i class="fa-regular fa-heart unchecked"></i>
+    <i class="fa-solid fa-heart checked"></i>
+   
+</label>
+</body>
+</html>
