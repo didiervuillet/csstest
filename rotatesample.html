@@ -1,0 +1,28 @@
+<div class="objet">
+<div class="div">coucou</div>
+<div class="div2">coucou</div>
+</div>
+<style>
+    .div{
+        width: 10rem;
+        height: 10rem;
+        background-color: pink;
+        transform-style: preserve-3d;
+       
+        transform: rotate3d(2, -1, -1, -0.2turn);
+    }
+    .div2{
+        position:absolute;
+        top:0rem;
+        width: 20rem;
+        height: 10rem;
+        background-color: blue;
+        transform-style: preserve-3d;
+       
+        transform: rotateY(45deg);
+    }
+    .objet{
+        transform: rotateY(45deg);
+        transform-style: preserve-3d;
+    }
+</style>

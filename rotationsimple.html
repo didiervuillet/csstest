@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+  <!-- translation de boite-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Superposer une div sur une autre div avec CSS</title>
+    <style> 
+      /* Mettez le code CSS ici. */
+
+.titre{
+  animation: rotatereverse 4s linear infinite reverse;
+  
+  position: absolute;
+  margin: 0rem;
+}
+
+@keyframes rotatereverse{
+    
+    from {
+     
+      transform: rotate(360deg);
+    }
+    to {
+     
+      transform: rotate(0deg) ;
+    }
+  }
+    </style>
+  </head>
+  <body>
+  
+        <h1 class="titre">Oh</h1>
+   
+  </body>
+</html>

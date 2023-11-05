@@ -1,0 +1,143 @@
+<style>
+
+
+*{margin:0;padding:0;-webkit-box-sizing:border-box;box-sizing:border-box}
+
+/***rotation 3D flip***/
+
+     
+     
+.cadre-demo{
+	
+display:flex;
+flex-flow:wrap;
+align-items: center;
+gap:1rem
+	
+	}   
+     
+
+.carte1,
+.carte2,
+.carte3{
+
+position: relative;
+margin: 2rem auto;
+
+	
+	}
+
+.carte1 div,
+.carte2 div,
+.carte3 div{
+	
+background-color: hsl(var(--couleur-fond));
+position: absolute;
+left: 0;
+top: 0;
+box-shadow: 0 8px 5px hsla(0,0%,0%,.2);
+transition: .8s transform;
+outline: 1px solid transparent;
+overflow: hidden;
+transform-style: preserve-3d;
+backface-visibility: hidden;
+-webkit-transform-style: preserve-3d;
+-webkit-backface-visibility: hidden;
+padding:10px	
+	}
+
+	
+	
+.carte1 .derriere,
+.carte2 .derriere,
+.carte3 .derriere {
+
+-webkit-transform: rotatey(-180deg);
+transform: rotatey(-180deg);
+	
+}
+
+
+.carte1:hover .derriere,
+.carte2:hover .derriere,
+.carte3:hover .derriere{
+	
+-webkit-transform: rotatey(0);
+transform: rotatey(0);
+
+	}
+
+.carte1:hover .devant,
+.carte2:hover .devant,
+.carte3:hover .devant{
+	
+-webkit-transform: rotatey(180deg);
+transform: rotatey(180deg)
+	
+	}
+
+.derriere p{
+
+word-wrap:break-word;
+text-align:left;
+font-size:1.25rem
+	
+	}
+	
+.carte1,
+.carte3{
+	
+height:320px;
+width:200px
+	
+	}
+	
+.carte1 div,
+.carte3 div{
+	
+	height:280px;
+	
+	}
+
+.carte2{
+	
+height:360px;
+width:240px
+	
+	}
+	
+.carte2 div{
+	
+	height:320px;
+	
+	}
+
+
+
+</style>
+
+<div class=carte1>
+    <div class="derriere">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at semper nibh.</p>
+    </div>
+    <div class="devant">
+    <img src="https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801" alt>
+    </div>
+    </div>
+    <div class=carte2>
+    <div class="derriere">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at semper nibh.</p>
+    </div>
+    <div class="devant">
+    <img src="https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801" alt>
+    </div>
+    </div>
+    <div class=carte3>
+    <div class="derriere">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum at semper nibh.</p>
+    </div>
+    <div class="devant">
+    <img src="https://unsplash.imgix.net/photo-1417722009592-65fa261f5632?q=75&fm=jpg&s=553e7d8a753f4d7b2a4161dcbe9d9801" alt>
+    </div>
+    </div>
+    
