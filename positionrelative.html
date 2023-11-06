@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+  <!-- translation de boite-->
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Superposer une div sur une autre div avec CSS</title>
+    <style> 
+      /* Mettez le code CSS ici. */
+      .parent {
+        width: 80%;
+   display:flex;
+   border:solid  red;
+   position: relative;
+   right: 0rem;
+  
+}
+
+.child1 {
+    width: 100%;
+    height: 3rem;;
+    background: blue;
+
+}
+
+.child2 {
+    position :absolute;
+    background: green;
+    width: 10%;
+    height: 3rem;
+    right: 0rem;
+    z-index: -1;
+   
+}
+.child1:hover{
+    animation :3s coco;
+}
+
+
+@keyframes coco{
+    from{width:100%;}
+        to{width:90%;}
+}
+
+
+
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child1"></div>
+      <div class="child2"></div>
+    </div>
+  </body>
+</html>
